@@ -15,7 +15,12 @@
 <script>
     document.getElementById('enviar').onclick = function() {
         let usuario = document.getElementById('usuario').value
-        document.getElementById('logado').textContent = 'O usuário ' + usuario + ' logou com sucesso!'
+        let senha = document.getElementById('senha').value
+        if(usuario === 'admin' && senha === 'admin123') {
+            document.getElementById('logado').textContent = 'O usuário ' + usuario + ' logou com sucesso!'
+        } else {
+            document.getElementById('logado').textContent = 'Acesso negado!'
+        }
     }
 </script>
 </html>
