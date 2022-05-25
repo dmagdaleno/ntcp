@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nome e Idade</title>
+</head>
+<body>
+    <p>Meu nome é <span id="nome"></span> e tenho <span id="idade"></span> anos</p>
+</body>
+<script>
+    let nome = prompt("Digite seu nome: ")
+    let idade = prompt("Digite sua idade: ")
+    document.getElementById("nome").textContent = nome
+    document.getElementById("idade").textContent = idade
+    console.log("Meu nome é " + nome + " e tenho " + idade + " anos")
+</script>
+</html>
